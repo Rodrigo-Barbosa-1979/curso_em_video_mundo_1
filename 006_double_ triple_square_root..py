@@ -5,10 +5,9 @@ Author: Rodrigo Barbosa
 Date: January 17, 2024
 '''
 from math import sqrt
-from utils.headers import header
-from utils.lines import line
+from utils import header, line
 
-print(header('Double, Triple and Square root', '='))
+print(header('Dobro, Triplo, Raiz Quadrada', '='))
 
 try:
 
@@ -24,4 +23,4 @@ try:
 
 
 except:
-    print('O valor informado não preenche o requisito de valor inteiro!')
+    print(f'{format("lightred")}O valor informado não preenche o requisito solicitado!{format("reset")}')

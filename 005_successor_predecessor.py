@@ -4,21 +4,20 @@ and predecessor on the screen.
 Author: Rodrigo Barbosa
 Date: January 17, 2024
 '''
-from utils.headers import header
-from utils.lines import line
+from utils import header, line
 
-print(header('Sucessor e Antecessor', '='))
+print(header('Antecessor e Sucessor', '='))
 
 try:
     value = int(
         input('Digite por gentileza um valor numérico inteiro: ').strip())
 
     print(f'''
-            O sucessor do valor {value:.>5} é: {value + 1}
             O antecessor do valor {value:.>3} é: {value - 1}
+            O sucessor do valor {value:.>5} é: {value + 1}
 
 {line('=')}
         ''')
 
 except:
-    print('O valor informado não preenche o requisito de valor inteiro!')
+    print(f'{format("lightred")}O valor informado não preenche o requisito solicitado!{format("reset")}')

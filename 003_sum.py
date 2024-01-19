@@ -4,9 +4,9 @@ between them.
 Author: Rodrigo Barbosa
 Date: January 17, 2024
 '''
-from utils.headers import header
+from utils import header
 
-print(header('SUM', '*'))
+print(header('Somando dois números', '*'))
 
 try:
 
@@ -17,5 +17,5 @@ try:
         f'A soma entre os números {first_number} e {second_number} é igual a 
         {first_number + second_number}')
 
-except:
-    print('O valor informado não é válido!')
+except:    
+    print(f'{format("lightred")}O valor informado não preenche o requisito solicitado!{format("reset")}')

@@ -15,14 +15,14 @@ def check_characteristics(value):
     """
 
     response = f"""
-        O tipo primitivo do valor "{value}" é: {type(value)} 
-        O valor "{value}" contém apenas espaços?: {value.isspace()}
-        O valor "{value}" é um número?: {value.isdecimal()} 
-        O valor "{value}" é alfabetico?: {value.isalpha()}
-        O valor "{value}" é alfanumérico?: {value.isalnum()}
-        O valor "{value}" está em letras maiusculas?: {value.isupper()}
-        O valor "{value}" está em letras minusculas?: {value.islower()}
-        O valor "{value}" está capitalizado?: {value.istitle()}
-        """
+                O tipo primitivo do valor "{value}" é: {type(value)} 
+                O valor "{value}" contém apenas espaços?: {value.isspace()}
+                O valor "{value}" é um número?: {value.isdecimal()} 
+                O valor "{value}" é alfabetico?: {value.isalpha()}
+                O valor "{value}" é alfanumérico?: {value.isalnum()}
+                O valor "{value}" está em letras maiusculas?: {value.isupper()}
+                O valor "{value}" está em letras minusculas?: {value.islower()}
+                O valor "{value}" está capitalizado?: {value.istitle()}
+                """
 
     return response

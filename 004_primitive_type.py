@@ -4,11 +4,9 @@ displays its primitive type and some information about it on the screen.
 Author: Rodrigo Barbosa
 Date: January 17, 2024
 '''
-from utils.headers import header
-from utils.lines import line
-from utils.characteristics import check_characteristics
+from utils import header, line, check_characteristics
 
-print(header('Primitive types and their information', '='))
+print(header('Dissecando uma Variável', '='))
 
 value = input('Digite por gentileza algo a ser analisado: ').strip()
 

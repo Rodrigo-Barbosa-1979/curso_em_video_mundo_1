@@ -3,6 +3,7 @@ Challenge: Create a function that returns a custom message.
 Author: Rodrigo Barbosa
 Date: January 17, 2024
 '''
+from utils import format
 
 
 def message(name, option):
@@ -14,17 +15,17 @@ def message(name, option):
     """
 
     options = {
-        'birthday': 'Happy birthday',
-        'welcome': 'Welcome',
-        'morning': 'Good morning',
-        'afternoon': 'Good afternoon',
-        'goodnight': 'Goodnight',
+        'birthday': 'Feliz aniversário',
+        'welcome': 'Bem vindo',
+        'morning': 'Bom dia',
+        'afternoon': 'Boa tarde',
+        'goodnight': 'Boa noite',
     }
 
     response = ' '
     choice = options.get(option.strip().lower())
 
     if choice:
-        response = f'{choice} {name.strip()}!'
+        response = f'{choice} {format("cyan")} {name.strip()}{format("reset")}!'
 
     return response
